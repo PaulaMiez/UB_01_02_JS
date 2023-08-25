@@ -160,3 +160,46 @@ CSS Grid Tasks:
 5. Grid with Auto Rows and Columns:
    - Create a grid container with auto-sized rows and columns.
    - Observe how the grid adjusts based on the content within the grid items.
+
+
+25/08/2023 - IN PROCESS
+
+Create a Basic Navbar:
+Build a simple navigation bar using Bootstrap's navbar component.
+Include links for Home, About, Services, and Contact.
+Customize the color and appearance of the navbar.
+
+Design a Card Layout:
+Create a card layout using Bootstrap's card component.
+Add an image, title, and description to the card.
+Customize the styling to make the card visually appealing.
+
+Implement a Carousel:
+Set up a carousel using Bootstrap's carousel component.
+Add at least three images to the carousel.
+Customize the carousel indicators and navigation arrows.
+
+Create a Form:
+Build a form using Bootstrap's form components.
+Include fields for name, email, subject, and message.
+Customize the form's styling, such as input widths and button colors.
+
+Apply Responsive Layout:
+Build a multi-column layout using Bootstrap's grid system.
+Experiment with different column sizes and responsiveness using the col-* classes.
+Test how the layout adapts to different screen sizes.
+
+Utilize Alerts:
+Implement Bootstrap's alert component to display success and error messages.
+Customize the alerts with appropriate text and styling.
+Add buttons to close the alerts.=
+
+Implement a Dropdown Menu:
+Add a dropdown menu to your navigation bar using Bootstrap's dropdown component.
+Populate the dropdown menu with a few options.
+Customize the dropdown's appearance and behavior.
+
+Design a Jumbotron:
+Create a jumbotron using Bootstrap's jumbotron component.
+Add a title, description, and a call-to-action button.
+Customize the background color and text color.

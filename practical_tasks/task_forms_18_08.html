@@ -9,20 +9,127 @@
 <body>
     <h1>HTML Forms</h1>
     <h2>User Registration Form</h2>
+    <h3>Fill the information below to register to our Website:</h3>
+</body>
+
+<body>
+    <form method="get">
+        <label for="username_id">Username</label><br>
+        <input type="text" id="username_id" name="username_n"><br>
+        <label for="email_id">E-mail</label><br>
+        <input type="text" id="email_id" name="email_n"><br>
+        <label for="password_id">Password</label><br>
+        <input type="password" id="password_id" name="password_n"><br>
+        <label for="passw_conf_id">Password Confirmation</label><br>
+        <input type="password" id="passw_conf_id" name="passw_conf_n"><br>
+        <button>Submit</button>
+    </form>
 </body>
 
 <body>
     <h2>Newsletter Signup Form</h2>
+    <h3>Fill the information below to sign-up for a daily Newsletter:</h3>
+</body>
+
+<body>
+    <form method="get">
+        <label for="name_id">Name</label><br>
+        <input type="text" id="name_id" name="name_n"><br>
+        <label for="email_id">E-mail</label><br>
+        <input type="text" id="email_id" name="email_n"><br>
+        <button>Sign-up for Newsletter</button>
+    </form>
 </body>
 
 <body>
     <h2>Survey Form</h2>
+    <h3>Please take the time to answer this short two-minute survey and let us know about your shopping habits:</h3>
 </body>
+
+<body>
+    <form>
+
+        <h3>1. Where do you live?</h3>
+        <label for="city">City:</label>
+        <select id="city" name="city">
+            <option value="large">Large city</option>
+            <option value="small">Small city</option>
+            <option value="rural">Rural town</option>
+        </select>
+
+        <h3>1. How often do you shop for groceries?</h3>
+        <input type="radio" id="once" name="shopping_frequency" value="once">
+        <label for="once">Once per week</label><br>
+        <input type="radio" id="more" name="shopping_frequency" value="more">
+        <label for="more">Two to five times a week</label><br>
+        <input type="radio" id="often" name="shopping_frequency" value="often">
+        <label for="often">Every day</label><br>
+
+        <h3>2. In which supermarkets do you shop for groceries most often?</h3>
+
+        <input type="checkbox" id="rimi" name="supermarkets" value="rimi">
+        <label for="rimi">Rimi</label><br>
+        <input type="checkbox" id="maxima" name="supermarkets" value="maxima">
+        <label for="maxima">Maxima</label><br>
+        <input type="checkbox" id="lidl" name="supermarkets" value="lidl">
+        <label for="lidl">Lidl</label><br>
+        <input type="checkbox" id="top" name="supermarkets" value="top">
+        <label for="top">Top!</label><br>
+        <input type="checkbox" id="sky" name="supermarkets" value="sky">
+        <label for="sky">Sky</label><br>
+        <input type="checkbox" id="mego" name="supermarkets" value="mego">
+        <label for="mego">Mego</label><br>
+        <input type="checkbox" id="other" name="supermarkets" value="other">
+        <label for="other">I shop at other supermarkets</label><br>
+        <input type="checkbox" id="none" name="supermarkets" value="none">
+        <label for="none">I don't shop in supermarkets</label><br>
+
+        <h3>3. Why do you visit these supermarkets in particular? Or why don't you shop in supermarkets?</h3>
+        <label for="answer">Please, let us know your opinion:</label><br>
+        <textarea id="answer" name="answer" rows="4" cols="50"></textarea>
+
+        <button>Submit</button>
+    </form>
+</body>
+
 
 <body>
     <h2>Contact Us Form</h2>
 </body>
 
 <body>
+    <form method="get">
+        <label for="name_id">Please, enter your name:</label><br>
+        <input type="text" id="name_id" name="name_n"><br>
+        <label for="email_id">Your E-mail</label><br>
+        <input type="text" id="email_id" name="email_n"><br>
+
+        <label for="subject">What's your topic?</label><br>
+        <select id="subject_id" name="subject_n">
+            <option value="suggestions">I want to suggest something</option>
+            <option value="complaint">I want to complain about something</option>
+            <option value="help">I need help with something</option>
+        </select><br>
+
+        <label for="message">Please, leave a message for us here:</label><br>
+        <textarea id="message_id" name="message_n" rows="4" cols="50"></textarea>
+
+        <p>Click the "Submit" button and we will get back to you ASAP.</p>
+        <button>Submit</button>
+    </form>
+</body>
+
+
+<body>
     <h2>File Upload Form</h2>
 </body>
+
+<body>
+    <form>
+        <label for="pic">Please, upload your picture:</label>
+        <input type="file" id="pic" name="pic" accept="image/*"><br>
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
