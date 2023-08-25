@@ -1,0 +1,162 @@
+17/08/2023 - DONE
+
+
+PART 1 (individual):
+
+1)Install GIT on your computer
+2)Create an account in GITHub (or Bitbucket, as you wish)
+3)Create a remote repository (can be public, you can also create it as Private and share with me). Please, note - this will be the repository you will use for the practical tasks
+during the whole course
+4)Create a local git repository, link it to the remote repository and create
+a sample file (any kind of text file) and push it to the remote repository (you can use Git Bash, console, terminal, GUI interface, source control, etc., up to you. If 
+you are not really familiar with command line, I suggest to use Git Bash for training purpose). Check if the file is pushed correctly
+5)Make a change in the file and push it to the remote repository.
+
+PART 2 (in group):
+
+1) ONE volunteer from the course to create a shared/public remote repository. Create a local git repository, link it to the remote repository created.
+Create a folder named "Group_files". Inside this folder create a file with you name_lastname.html with the content:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>(YOUR NAME LAST NAME)</title>
+</head>
+<body>
+   <h1>Hello world</h1>
+</body>
+</html> 
+
+Inside main repository folder, create a file called common.html, with the following content:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Public file</title>
+</head>
+<body>
+   <h1>Hello world</h1>
+   <h2>Hi all, My name is YOUR NAME LAST NAME</h2>
+</body>
+</html> 
+
+Push the changes to he remote repository, share the link to the repository in Discord group.
+2) EVERYONE - create a local Git repository on your computer, link it to the remote repsitory created in Step 1. Pull the changes.
+3) Inside the folder "Group_files" create a file with you name_lastname.html with the content:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>(YOUR NAME LAST NAME)</title>
+</head>
+<body>
+   <h1>Hello world</h1>
+</body>
+</html> 
+4) Add the line 
+
+<h2>Hi all, My name is YOUR NAME LAST NAME</h2>
+
+in common.html file, under the previous entry. Push the changes made to the remote repository.
+In this task, the main idea is to see the problems which may occur if many people changing the same file.
+If you run into CONFLICT, please, solve it manually.
+
+
+
+18/08/2023 - IN PROCESS
+
+**HTML Tables:**
+
+1. **Basic Table Creation:** Create a simple HTML table with at least 3 rows and 3 columns. Add appropriate headers and data to each cell.
+
+2. **Spanning Cells:** Create a table where some cells span across multiple rows or columns using the `colspan` and `rowspan` attributes.
+
+3. **Nested Tables:** Create a nested table structure with a main table and at least one nested table within a cell.
+
+4. **Table Header and Footer:** Design a table with a distinct header, body, and footer using the `<thead>`, `<tbody>`, and `<tfoot>` elements.
+
+**HTML Forms:**
+
+1. **User Registration Form:** Design a form for user registration. Include fields for username, email, password, and a password confirmation.
+
+2. **Newsletter Signup Form:** Create a form for users to sign up for a newsletter. Include fields for their name and email address.
+
+3. **Survey Form:** Design a survey form with various types of input elements such as radio buttons, checkboxes, and text areas.
+
+4. **Contact Us Form:** Create a form that allows users to contact you. Include fields for name, email, subject, and a message textarea.
+
+5. **File Upload Form:** Design a form that allows users to upload files. Include a field for selecting a file and a submit button.
+
+For some case you need to explore a different input field types/ways, for example:
+Password input - <input type="password"> 
+Radio buttons  -    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label> 
+Checkboxes: 
+<form>
+    <label>Interests:</label>
+    <input type="checkbox" id="music" name="interests[]" value="music">
+    <label for="music">Music</label>
+    <input type="checkbox" id="books" name="interests[]" value="books">
+    <label for="books">Books</label>
+    <input type="checkbox" id="sports" name="interests[]" value="sports">
+    <label for="sports">Sports</label>
+</form>
+Dropdown: 
+<form>
+    <label for="country">Country:</label>
+    <select id="country" name="country">
+        <option value="usa">United States</option>
+        <option value="canada">Canada</option>
+        <option value="uk">United Kingdom</option>
+    </select>
+</form>
+Text area: 
+<form>
+    <label for="comments">Comments:</label>
+    <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+</form>
+File upload: 
+<form>
+    <label for="avatar">Choose a profile picture:</label>
+    <input type="file" id="avatar" name="avatar" accept="image/*">
+</form>
+
+
+
+24/08/2023 - IN PROCESS
+
+CSS Flexbox Tasks:
+
+1. Simple Horizontal Layout:
+   - Create an HTML structure with a container and multiple elements.
+   - Apply CSS to the container to make the contained elements align horizontally with equal spacing between them.
+
+2. Centering Items Both Horizontally and Vertically:
+   - Design an HTML structure with a container and inner elements.
+   - Use flexbox properties to center the inner elements both horizontally and vertically within the container.
+
+3. Equal Width Columns:
+   - Construct an HTML layout with a container and multiple columns.
+   - Utilize flexbox properties to ensure that the columns have equal width and are spaced evenly.
+
+CSS Grid Tasks:
+
+1. Basic Grid Layout:
+   - Build an HTML structure with a grid container and multiple grid items.
+   - Apply CSS grid properties to create a basic grid layout with a specific number of columns and rows.
+
+2. Grid with Different Column Sizes:
+   - Design a grid container with multiple grid items.
+   - Use CSS grid properties to specify different widths for each column while maintaining the grid structure.
+
+3. Grid with Fixed and Flexible Columns:
+   - Construct a grid container with fixed-width and flexible-width columns.
+   - Adjust the grid-template-columns property to achieve the desired column distribution.
+
+4. Grid with Rows and Columns:
+   - Develop a grid layout with both rows and columns by utilizing grid-template-rows and grid-template-columns.
+
+5. Grid with Auto Rows and Columns:
+   - Create a grid container with auto-sized rows and columns.
+   - Observe how the grid adjusts based on the content within the grid items.
