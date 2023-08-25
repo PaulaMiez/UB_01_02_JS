@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<html>
+
+<head>
+    <title>HTML Tables</title>
+</head>
+
+<body>
+    <h1>HTML Tables</h1>
+    <h2>Basic Table</h2>
+</body>
+
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>
+                    <h2>Colors</h2>
+                </th>
+                <th>
+                    <h2>Spices</h2>
+                </th>
+                <th>
+                    <h2>Fruits</h2>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <h3>Orange</h3>
+                </td>
+                <td>
+                    <h3>Turmeric</h3>
+                </td>
+                <td>
+                    <h3>Apricots</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Red</h3>
+                </td>
+                <td>
+                    <h3>Saffron</h3>
+                </td>
+                <td>
+                    <h3>Strawberry</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Yellow</h3>
+                </td>
+                <td>
+                    <h3>Curry</h3>
+                </td>
+                <td>
+                    <h3>Banana</h3>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+<body>
+    <h2>Spanning Cells</h2>
+</body>
+
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="4">
+                    <h2>Colors</h2>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2" rowspan="2">
+                    <h3>Orange</h3>
+                </td>
+                <td colspan="2">
+                    <h3>Red</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Green</h3>
+                </td>
+                <td rowspan="2">
+                    <h3>Yellow</h3>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h3>Blue</h3>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+<body>
+    <h2>Nested Tables</h2>
+</body>
+<table border="1">
+    <thead>
+        <tr>
+            <th colspan="4">
+                <h2>Fruits and Colors</h2>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <h3>Orange</h3>
+            </td>
+            <td>
+                <h3>Fruits</h3>
+                <table border="1">
+                    <tr>
+                        <td>Apricots</td>
+                    </tr>
+                    <tr>
+                        <td>Mandarin</td>
+                    </tr>
+                    <tr>
+                        <td>Nectarines</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3>Fruits</h3>
+                <table border="1">
+                    <tr>
+                        <td>Strawberry</td>
+                    </tr>
+                    <tr>
+                        <td>Apple</td>
+                    </tr>
+                    <tr>
+                        <td>Lime</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <h3>Red</h3>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3>Blue</h3>
+            </td>
+            <td>
+                <h3>Fruits</h3>
+                <table border="1">
+                    <tr>
+                        <td>Blueberry</td>
+                    </tr>
+                    <tr>
+                        <td>Plums</td>
+                    </tr>
+                    <tr>
+                        <td>Figs</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</body>
+
+<body>
+    <h2>Table Header and Footer</h2>
+</body>
+
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="3">
+                    <h2>Warm Colors</h2>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <h3>Yellow</h3>
+                </td>
+                <td>
+                    <h3>Orange</h3>
+                </td>
+                <td>
+                    <h3>Red</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Green</h3>
+                </td>
+                <td>
+                    <h3>Blue</h3>
+                </td>
+                <td>
+                    <h3>Purple</h3>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="3">
+                    <h2>Cold Colors</h2>
+                </th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
