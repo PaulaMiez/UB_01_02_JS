@@ -61,7 +61,7 @@ If you run into CONFLICT, please, solve it manually.
 
 
 
-18/08/2023 - IN PROCESS
+18/08/2023 - DONE
 
 **HTML Tables:**
 
@@ -203,3 +203,92 @@ Design a Jumbotron:
 Create a jumbotron using Bootstrap's jumbotron component.
 Add a title, description, and a call-to-action button.
 Customize the background color and text color.
+
+
+31/08/2023 - DONE
+
+1)Create an html page with JavaScript file included
+
+2)Write JS code which asks the user to enter the name (promt command)
+
+Write in console - "(name entered) logged in!"
+
+3) Ask user to enter 2 text values. If the input of both values are numbers, alert the sum of both otherwise alert the concatenation
+
+4)Ask the user to enter two values: Name and date of birth.Show alert output in 2 lines:"
+
+Name: (name entered)
+Date of birth: (date of birth entered)
+
+
+
+01/09/2023 - DONE
+
+Create the calculator using JavaScript
+Means:
+Ask user to enter 2 value (using prompt)
+Write the output of different operations in console: +,-,*,/,%, **, compare 2 values (==,!=,less than, greater then)
+Write : value1 is greater than value2 (if value1 is greater than value 2) or value2 is greater or equal than value1 if value2 is greater or equal to value1
+
+
+
+06/09/2023 - DONE
+
+1) Ask the user to enter 2 numbers using promt.
+If any of the inouts is not a number,
+write the error in console
+2) Ask the user to enter one of the following operations
+"+","-","/","*" or  "%". If the character entered
+does not match one of these - write the error in console
+3) Based on the operation provided, alert the result.
+
+
+
+08/09/2023 - IN PROCESS
+
+Optional Task: Implement Zodiak task (ask user to enter Birth Day and Month and output the Zodiak sign)
+
+Task:
+
+Ask user to enter the number in promt. If the value is not a number, ask user to re-enter it
+
+Task :
+
+Ask user to enter the number. Print (alert or log) all the numbers up to it, which are prime
+
+Task: FizzBuzz
+
+Objective: Write a program that prints numbers from 1 to a specified limit, following the FizzBuzz rules.
+
+Description: Create a JavaScript program that takes a user-specified number as input (e.g., 100). The program should then print numbers from 1 to the specified number with the following rules:
+
+If a number is a multiple of 3, print "Fizz" instead of the number.
+If a number is a multiple of 5, print "Buzz" instead of the number.
+If a number is a multiple of both 3 and 5, print "FizzBuzz."
+Otherwise, print the number itself.
+
+Output example:
+
+1
+2
+Fizz
+4
+Buzz
+Fizz
+7
+8
+Fizz
+Buzz
+11
+Fizz
+13
+14
+FizzBuzz
+16
+...
+i
+Hints:
+
+-You can use a for loop to iterate through the numbers from 1 to the specified limit.
+-Use the modulus operator (%) to check if a number is divisible by 3, 5, or both.
+-Implement conditional statements (e.g., if, else if, else) to determine what to print for each number.
