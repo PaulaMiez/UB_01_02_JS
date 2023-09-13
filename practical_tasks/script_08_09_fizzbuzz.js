@@ -1,4 +1,8 @@
-let number = Number(prompt("Please, enter number: "))
+let number;
+
+do {
+   number = Number(prompt("Please, enter number:"))
+} while(isNaN(number))
 
 for(let i = 1; i <= number; i++) { 
 
