@@ -168,6 +168,50 @@
 // alert(variable);
 
 
+// function largerst_element(arr1, isSmaller) {
+//     if (arr1.length == 0)
+//         return;//use return command to go out of the function
+
+//     let largest = arr1[0];
+//     for (let i = 1; i < arr1.length; i++) {
+//         if (isSmaller(largest, arr1[i]))
+//             largest = arr1[i]
+//     }
+//     return largest;
+// }
+
+
+///Tested for Numerical
+// let number_arr1 = [1, 0, -1, -29, 20];
+
+// function smaller_numb_absol(a1, a2) {
+//     return Math.abs(a1) < Math.abs(a2)
+// }
+
+// alert(largerst_element(number_arr1, smaller_numb_absol))
+
+// let array_of_array = [[10, 19, 17], [10, 17], [7, 4, 0, 10]]
+
+// function smaller_element_arr(arr1, arr2) {
+//     let avg1 = 0;
+//     let avg2 = 0;
+
+//     for (let i = 0; i < arr1.length; i++) {
+//         avg1 += arr1[i];
+//     }
+//     avg1 /= arr1.length;
+
+//     for (let i = 0; i < arr2.length; i++) {
+//         avg2 += arr2[i];
+//     }
+//     avg2 /= arr2.length;
+
+//     return avg1 < avg2
+// }
+
+// alert(largerst_element(array_of_array, smaller_element_arr).join())
+
+
 /// How we define OBJECTS
 
 let person = {
