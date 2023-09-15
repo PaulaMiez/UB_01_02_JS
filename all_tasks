@@ -124,7 +124,7 @@ File upload:
 
 
 
-24/08/2023 - IN PROCESS
+24/08/2023 - DONE
 
 CSS Flexbox Tasks:
 
@@ -244,7 +244,7 @@ does not match one of these - write the error in console
 
 
 
-08/09/2023 - IN PROCESS
+08/09/2023 - DONE
 
 Optional Task: Implement Zodiak task (ask user to enter Birth Day and Month and output the Zodiak sign)
 
@@ -292,3 +292,36 @@ Hints:
 -You can use a for loop to iterate through the numbers from 1 to the specified limit.
 -Use the modulus operator (%) to check if a number is divisible by 3, 5, or both.
 -Implement conditional statements (e.g., if, else if, else) to determine what to print for each number.
+
+
+
+14/09/2023 - IN PROCESS
+
+Arrays:
+
+1) Ask user to enter 2 Matrixes (2-dimensional array). Implement 
+the user input (ex. with prompt). After it calculate the sum of 2 matrixes
+and show the outup (in console or using the alert)
+
+*2) Implement your own sorting of the numerical array (without using standard Array.sort function)
+
+Functions:
+
+1)Create a function that takes an age as a parameter and returns
+"You are an underages" if the age is less than 18, and "You are an adult" if the age is 18 or older.
+
+2)Create a function that takes a name and an age as parameters and returns
+a greeting message like "Hello, [Name]! You are [Age] years old."
+
+3)Write a function that calculates the area of a rectangle
+when given its width and height as parameters. Return the area.
+
+4)Write a function that takes a number as a parameter and returns
+a new function. The returned function should take another number and return the sum of both numbers.
+
+5)Create a function that takes an array of numbers
+as a parameter and returns the sum and the average
+of all the numbers in the array.
+
+6)Create a function that attempts to divide two numbers.
+Handle potential errors such as division by zero and log appropriate error messages.
