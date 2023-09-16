@@ -20,12 +20,12 @@ let rowLen2 = prompt("Rows for Matrix 2:");
 let colLen2 = prompt("Columns for Matrix 2:");
 
 let matrix2 = new Array(colLen2);
-for (var i = 0; i < colLen2; i++) {
+for (let i = 0; i < colLen2; i++) {
  matrix2[i] = new Array(rowLen2);
 }
 
-for (var i = 0; i < colLen2; i++) {
-    for (var j = 0; j < rowLen2; j++) {
+for (let i = 0; i < colLen2; i++) {
+    for (let j = 0; j < rowLen2; j++) {
         //ask to write i col j row value
         matrix2[i][j] = prompt("For Matrix 2, enter value of column " + i + " and row " + j);
     }

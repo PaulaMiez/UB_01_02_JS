@@ -212,13 +212,116 @@
 // alert(largerst_element(array_of_array, smaller_element_arr).join())
 
 
+/// RECURSION
+
+// const number_input = +prompt("Enter the number");
+
+// /// n! = n * n-1 * n-2 ... 3 * 2 * 1 = n *(n-1)! = n * (n-1) * (n-2)!
+
+// function factorial(n) {
+//     if (n == 1) {
+//         return 1;
+//     }
+//     else {
+//         return n * factorial(n-1);
+//     }
+// }
+
+// const factorial_result = factorial(number_input);
+
+// alert("The factorial of " + number_input + " is " + factorial_result);
+
+
 /// How we define OBJECTS
 
-let person = {
-    name: "Paula",
-    lastName: "Miezāka",
-    getFullName: function() {
-        return this.name + " " + this.lastName; // using keywords THIS we can acess the current object from the inside
-    }
-}
+// let person = {
+//     name: "Paula",
+//     lastName: "Miezāka",
+//     getFullName: function() {
+//         return this.name + " " + this.lastName; // using keywords THIS we can acess the current object from the inside
+//     }
+// }
 
+// const my_person = {};
+// my_person.name = "Paula";
+// my_person.last_name = "Miezāka";
+// my_person.full_name = function () {
+//     return this.name + " " + this.last_name;
+// }
+
+
+
+// function addTimeStamp(element) {
+//     const date = new Date();
+//     element.timestamp = date.getSeconds().toString + date.getMinutes().toString + date.getHours().toString;
+// }
+
+// const company = {
+//     name: "Apple",
+//     year: 1970,
+//     country: "US"
+// }
+
+// const country = {
+//     name: "US",
+//     ful_name: "The United States of America",
+//     population: 3500000000
+// }
+
+// addTimeStamp(company);
+// addTimeStamp(country);
+
+
+
+
+// function makeCar(make,model,year) {
+//     const car = {
+//         // make: make,
+//         // model: model,
+//         // year: year
+//         make,
+//         model,
+//         year
+//     }
+
+    /* 
+    {
+        make: (make_value),
+        model: (model_value),
+        year: (year_value),
+    }
+    */
+//     return car;
+// }
+
+// const make = prompt("Enter car's make:");
+// const model = prompt("Enter car's model:");
+// const year = prompt("Enter car's year:");
+
+// const myCar = makeCar(make,model,year);
+
+
+
+///Constructor
+
+// function Car(make,model,year) {
+//     this.make = make;
+//     this.model = model;
+//     this.year = year;
+// }
+
+// const make = prompt("Enter car's make:");
+// const model = prompt("Enter car's model:");
+// const year = prompt("Enter car's year:");
+
+// // const myCar = makeCar(make,model,year);
+
+// const myCar = new Car(make,model,year); // new keyword calls the constructor of the Object
+
+
+
+function onDone() {
+    const name_element = this.document.getElementById("name");
+    const input_value = name_element.value;
+    alert("Hello, " + input_value);
+}

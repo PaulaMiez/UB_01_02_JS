@@ -325,3 +325,19 @@ of all the numbers in the array.
 
 6)Create a function that attempts to divide two numbers.
 Handle potential errors such as division by zero and log appropriate error messages.
+
+
+
+15/09/2023 - IN PROCESS
+
+Create an object named person with properties: name, last_name,date_of_birth, and bank_accounts(as array).
+Populate name, last_name,date_of_birth with the values. For Bank Accounts - creaate a different objects, which have:bank(should be another object with name, country, numberofclients),
+balance.
+
+Add 2 functions to deposit and to witdraw (each with two parameters - name of the bank and value to deposit/withdraw).
+If the deposit function is called, add the number provided to the balance of the corresponding bank.
+If the withdraw function is called - reduce the balance by the number provided.
+
+Create the function getAge, which returns the calculated age of the person, based on the
+date_of_birth populated
+Preferable, if you create the Object prototypes and populate the values from user input
