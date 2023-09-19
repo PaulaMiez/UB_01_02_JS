@@ -1,75 +1,85 @@
 
+let bank_name1 = (prompt("Enter the name of the bank to deposit:")).toLowerCase();
 let depositValue = Number(prompt("Enter the value to deposit:"));
+
+let bank_name2 = prompt("Enter the name of the bank to withdraw:").toLowerCase();
 let withdrawValue = Number(prompt("Enter the value to withdraw:"));
-let bank_name = prompt("Enter the name of the bank:");
 
 let person = {
     personName: "Joe",
     last_name: "Bro",
-    date_of_birth: "01.10.2000.",
+    date_of_birth: new Date(2000, 10, 1),
     bank_accounts: [
-        { name: "Swedbank", country: "Latvia", numberOfClients: 100000, balance: 2500000000 },
-        { name: "UniCredit", country: "Italy", numberOfClients: 200000, balance: 3000000000 },
-        { name: "DZ Bank", country: "Germany", numberOfClients: 500000, balance: 6000000000 }
+        { name: "swedbank", country: "Latvia", numberOfClients: 100000, balance: 2500000000 },
+        { name: "unicredit", country: "Italy", numberOfClients: 200000, balance: 3000000000 },
+        { name: "dz bank", country: "Germany", numberOfClients: 500000, balance: 6000000000 }
     ],
-    deposit: function () {
-        if (bank_name === this.bank_accounts[0].name) {
-            return this.bank_accounts[0].balance + depositValue
+
+    depositUniversal: function (name, value) {
+        for (let i = 0; i < this.bank_accounts.length; i++) {
+            if (this.bank_accounts[i].name === name) {
+                this.bank_accounts[i].balance += value;
+                return 0;
+            }
         }
-        else if (bank_name === this.bank_accounts[1].name) {
-            return this.bank_accounts[1].balance + depositValue
-        }
-        else if (bank_name === this.bank_accounts[2].name) {
-            return this.bank_accounts[2].balance + depositValue
-        }
-        return 0;
+        return 1;
     },
-    withdraw: function () {
-        if (bank_name === this.bank_accounts[0].name) {
-            return this.bank_accounts[0].balance - withdrawValue
+
+    withdrawUniversal: function (name, value) {
+        for (let i = 0; i < this.bank_accounts.length; i++) {
+            if (this.bank_accounts[i].name === name) {
+                this.bank_accounts[i].balance -= value;
+                return 0;
+            }
         }
-        else if (bank_name === this.bank_accounts[1].name) {
-            return this.bank_accounts[1].balance - withdrawValue
-        }
-        else if (bank_name === this.bank_accounts[2].name) {
-            return this.bank_accounts[2].balance - withdrawValue
-        }
-        return 0;
+        return 1;
+    },
+
+    getAge: function (birthdate) {
+        const today = new Date();
+        const age = today.getFullYear() - birthdate.getFullYear() - (today.getMonth() < birthdate.getMonth() 
+        || (today.getMonth() === birthdate.getMonth() && today.getDate() < birthdate.getDate()));
+        return age;
     }
+
 }
 
-//console.log(person.bank_accounts);
-console.log(person.deposit());
-console.log(person.withdraw());
+
+person.depositUniversal(bank_name1, depositValue);
+person.withdrawUniversal(bank_name2, withdrawValue);
+console.log(person.bank_accounts);
+console.log(person.getAge(person.date_of_birth));
 
 
 
-// function getAge() {
-//     const dateOfBirth_element = this.document.getElementById("date_of_birth");
-//     const input_value = dateOfBirth_element.value;
-//     alert(input_value);
-// }
 
 
-// function onDone() {
-//     const name_element = this.document.getElementById("name");
-//     const input_value = name_element.value;
-//     alert("Hello, " + input_value);
-// }
 
+// deposit: function (name, value) {
+    //     if (name === this.bank_accounts[0].name) {
+    //         this.bank_accounts[0].balance += value
+    //     }
+    //     else if (name === this.bank_accounts[1].name) {
+    //         this.bank_accounts[1].balance += value
+    //     }
+    //     else if (name === this.bank_accounts[2].name) {
+    //         this.bank_accounts[2].balance += value
+    //     }
+    //     return 0; 
+    //  },   
 
-// let person = {
-//     name: "Paula",
-//     lastName: "Miezāka",
-//     getFullName: function() {
-//         return this.name + " " + this.lastName; // using keywords THIS we can acess the current object from the inside
-//     }
-// }
-
-
-// const my_person = {};
-// my_person.name = "Paula";
-// my_person.last_name = "Miezāka";
-// my_person.full_name = function () {
-//     return this.name + " " + this.last_name;
-// }
+    // withdraw: function (name, value) {
+    //     if (name === this.bank_accounts[0].name) {
+    //         this.bank_accounts[0].balance -= value
+    //     }
+    //     else if (name === this.bank_accounts[1].name) {
+    //         this.bank_accounts[1].balance -= value
+    //     }
+    //     else if (name === this.bank_accounts[2].name) {
+    //         this.bank_accounts[2].balance -= value
+    //     }
+    //     return 0;
+    // }
+    
+    // person.deposit(bank_name1,depositValue);
+    // person.withdraw(bank_name2,withdrawValue);
